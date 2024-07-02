@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 3 # Number of pods to run
+  selector:
+    matchLabels:
+      app: my-app # Labels to match for pods
+  template:
+    metadata:
+      labels:
+        app: my-app # Labels for the pods
+    spec:
+      containers:
+      - name: my-container
+        image: " us-docker.pkg.dev/oval-cyclist-426414-p0/myrepo/java2" # Replace with your image
+        ports:
+        - containerPort: 8080 # Port your app listens on
+        resources:
+          requests:
+            cpu: "100m" # Minimum CPU resources
+            memory: "100Mi" # Minimum memory resources
+          limits:
+            cpu: "500m" # Maximum CPU resources
+            memory: "500Mi" # Maximum memory resources
