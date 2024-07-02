@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: " us-docker.pkg.dev/oval-cyclist-426414-p0/myrepo/java2" # Replace with your image
+        image: "us-docker.pkg.dev/oval-cyclist-426414-p0/myrepo/java2" # Replace with your image
         ports:
         - containerPort: 8080 # Port your app listens on
         resources:
