@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-deployment
+  namespace: namespace1
 spec:
   replicas: 3 # Number of pods to run
   selector:
