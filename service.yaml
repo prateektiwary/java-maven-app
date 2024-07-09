@@ -6,7 +6,7 @@ spec:
   selector:
     app: my-app # Matches the labels on the pods
   ports:
-  - port: 80 # The port that this service exposes
+  - port: 8080 # The port that this service exposes
     targetPort: 8080 # The port on the container that the service forwards to
     protocol: TCP # The protocol used
   type: ClusterIP # Exposes the service externally (optional)
