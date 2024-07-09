@@ -9,4 +9,4 @@ spec:
   - port: 80 # The port that this service exposes
     targetPort: 8080 # The port on the container that the service forwards to
     protocol: TCP # The protocol used
-  type: LoadBalancer # Exposes the service externally (optional)
+  type: ClusterIP # Exposes the service externally (optional)
